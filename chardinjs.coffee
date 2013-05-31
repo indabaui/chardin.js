@@ -1,3 +1,5 @@
+window.jQuery = module.exports = require('jquery')
+
 do ($ = window.jQuery, window) ->
   # Define the plugin class
   class chardinJs
@@ -158,5 +160,3 @@ do ($ = window.jQuery, window) ->
     if typeof option == 'string'
       data[option].apply(data, args)
     data
-
-  module.exports = $
